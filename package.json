@@ -1,0 +1,25 @@
+{
+  "name": "@ecwyne/amqp-utils",
+  "version": "0.0.1",
+  "description": "Utilities used in amqp projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecwyne/amqp-utils.git"
+  },
+  "author": "Eric Wyne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecwyne/amqp-utils/issues"
+  },
+  "homepage": "https://github.com/ecwyne/amqp-utils#readme",
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "bluebird": "^3.4.6",
+    "node-uuid": "^1.4.7",
+    "ramda": "^0.22.1"
+  }
+}
