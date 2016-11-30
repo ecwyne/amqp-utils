@@ -13,7 +13,7 @@ const Resolvers = {
 	date: msg => new Date(msg.content.toString())
 };
 
-module.exports = R.memoize(connectionString => {
+module.exports = connectionString => {
 	const amqp = amqplib.connect(connectionString);
 	const chan = amqp.then(conn => conn.createChannel());
 
@@ -90,5 +90,5 @@ module.exports = R.memoize(connectionString => {
 			});
 		}, options);
 	};
-	return {assertQueue, deleteQueue, cancel, send, consume, ack, uuid, call, handle};
-});
+	return {assertQueue, deleteQueue, cancel, send, consume, ack, uuid, call, handle, chan};
+};
