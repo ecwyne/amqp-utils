@@ -7,5 +7,5 @@ npm i --save @ecwyne/amqp-utils
 
 ## Use
 ```javascript
-const AMQPUtils = require('./utils.js')('amqp://USERNAME:PASSWORD@HOSTNAME')
+const AMQPUtils = require('@ecwyne/amqp-utils')('amqp://USERNAME:PASSWORD@HOSTNAME')
 ```
