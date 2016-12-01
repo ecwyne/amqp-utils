@@ -1,6 +1,6 @@
 {
   "name": "@ecwyne/amqp-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utilities used in amqp projects",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "dependencies": {
     "amqplib": "^0.5.1",
     "bluebird": "^3.4.6",
-    "node-uuid": "^1.4.7",
-    "ramda": "^0.22.1"
+    "ramda": "^0.22.1",
+    "uuid": "^3.0.1"
   }
 }
