@@ -1,6 +1,6 @@
 const amqplib = require('amqplib');
 const R = require('ramda');
-const nodeuuid = require('node-uuid');
+const nodeuuid = require('uuid');
 const Promise = require('bluebird');
 
 const Resolvers = {
