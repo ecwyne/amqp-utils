@@ -1,10 +1,12 @@
 {
   "name": "@ecwyne/amqp-utils",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Utilities used in amqp projects",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "babel --presets=env,stage-3 src --out-dir dist",
+    "start": "babel-node --presets=env,stage-3 test.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,14 @@
     "bluebird": "^3.4.6",
     "ramda": "^0.22.1",
     "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-react": "^7.2.0"
   }
 }
